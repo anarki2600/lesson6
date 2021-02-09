@@ -30,13 +30,6 @@ namespace dz6
             Process programma = Process.GetProcessById(Int32.Parse(id));
             programma.Kill();
             programma.WaitForExit();
-
-            Process[] processlist2 = Process.GetProcesses();
-
-            foreach (Process theprocess in processlist2)
-            {
-                Console.WriteLine("Process: {0} ID: {1}", theprocess.ProcessName, theprocess.Id);
-            }
             
             if (programma.Responding)                                                            //проверка статуса..Нужно дописать код, чтоб обновлялся процессЛист;
             {
