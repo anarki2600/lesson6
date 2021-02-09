@@ -37,18 +37,15 @@ namespace dz6
             {
                 Console.WriteLine("Process: {0} ID: {1}", theprocess.ProcessName, theprocess.Id);
             }
-            if (programma.Responding)
+            
+            if (programma.Responding)                                                            //проверка статуса..Нужно дописать код, чтоб обновлялся процессЛист;
             {
-                Console.WriteLine("Status = Running");
+                Console.WriteLine("Status = Работает");
             }
             else
             {
-                Console.WriteLine("Status = Not Responding");
+                Console.WriteLine("Status = Не отвечает");
             }
-
-
-
-
 
             Console.ReadKey();
             
